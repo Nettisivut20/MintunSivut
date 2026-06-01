@@ -13,15 +13,28 @@ body {
   font-family: 'Quicksand', sans-serif;
 
   /* TAUSTAKUVA */
-  background-image: url("taustaKuva.png");
+  background-image: url("tausta2.png");
 
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
 
   min-height: 100vh;
+
   color: #5e4b4b;
 }
+
+
+/* LÄPINÄKYVÄ KERROS */
+
+.overlay {
+  background-color: rgba(255, 255, 255, 0.45);
+
+  min-height: 100vh;
+
+  padding: 40px 20px;
+}
+
 
 /* NAVBAR */
 
@@ -58,18 +71,8 @@ body {
   transform: translateY(-2px);
 }
 
-/* LÄPINÄKYVÄ KERROS */
 
-.overlay {
-  background-color: rgba(255, 255, 255, 0.45);
-
-  min-height: 100vh;
-
-  padding: 40px 20px;
-}
-
-
-/* HERO ELI ALKUOSIO*/
+/* HERO ELI ALKUOSIO */
 
 .hero {
   text-align: center;
@@ -79,15 +82,18 @@ body {
 }
 
 .hero h1 {
-  font-family: 'Playfair Display', serif;
 
-  font-size: 4rem;
+  /* KAUNO FONTTI */
+
+  font-family: 'Dancing Script', cursive;
+
+  font-size: 5rem;
 
   color: #7d5d67;
 
   margin-bottom: 15px;
 
-  letter-spacing: 1px;
+  font-weight: 600;
 }
 
 .subtitle {
@@ -105,6 +111,7 @@ body {
   margin: auto;
 
   display: flex;
+
   gap: 40px;
 
   align-items: center;
@@ -117,11 +124,13 @@ body {
 
 
 /* TEKSTILAATIKKO */
-.text-box { 
+
+.text-box {
   flex: 1;
+
   min-width: 300px;
 
-  background-color: rgba(250, 240, 230, 0.65);
+  background-color: rgba(226, 235, 242, 0.42);
 
   padding: 35px;
 
@@ -135,11 +144,13 @@ body {
 .text-box h2 {
   margin-bottom: 20px;
 
-  font-family: 'Playfair Display', serif;
+  font-family: 'Dancing Script', cursive;
 
   color: #7d5d67;
 
-  font-size: 2rem;
+  font-size: 3rem;
+
+  font-weight: 500;
 }
 
 .text-box p {
@@ -153,6 +164,7 @@ body {
 
 .image-box {
   width: 320px;
+
   height: 500px;
 
   border-radius: 30px;
@@ -164,6 +176,7 @@ body {
 
 .image-box img {
   width: 100%;
+
   height: 100%;
 
   object-fit: cover;
@@ -179,7 +192,7 @@ body {
 
   text-align: center;
 
-  background-color: rgba(250, 240, 230, 0.65);
+ background-color: rgba(226, 235, 242, 0.42);
 
   padding: 30px;
 
@@ -193,9 +206,13 @@ body {
 .contact-box h2 {
   margin-bottom: 20px;
 
-  font-family: 'Playfair Display', serif;
+  font-family: 'Dancing Script', cursive;
 
   color: #7d5d67;
+
+  font-size: 3rem;
+
+  font-weight: 500;
 }
 
 .contact-box p {
@@ -210,7 +227,12 @@ body {
 @media (max-width: 768px) {
 
   .hero h1 {
-    font-size: 2.7rem;
+    font-size: 3.2rem;
+  }
+
+  .text-box h2,
+  .contact-box h2 {
+    font-size: 2.4rem;
   }
 
   .content-container {
@@ -219,6 +241,7 @@ body {
 
   .image-box {
     width: 100%;
+
     max-width: 350px;
 
     height: 450px;
@@ -229,6 +252,8 @@ body {
     padding: 25px;
   }
 
+  .navbar {
+    flex-wrap: wrap;
+  }
 
-  
 }
