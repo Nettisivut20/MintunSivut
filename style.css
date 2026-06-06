@@ -21,39 +21,84 @@ body {
 
   min-height: 100vh;
   color: #5e4b4b;
+
+  /* TÄMÄ ESTÄÄ SISÄLTÖÄ MENEMÄSTÄ KIINTEÄN BANNERIN ALLE */
+  padding-top: 95px;
 }
 
 
-/* NAVBAR */
+/* NAVBAR / YLÄBANNERI */
 
 .navbar {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
 
-  margin-bottom: 30px;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+
+  padding: 18px 40px;
+
+  background-color: rgba(119, 76, 92, 0.75);
+  backdrop-filter: blur(10px);
+
+  z-index: 999;
+
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.18);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
 }
 
-.navbar a {
+
+/* YRITYKSEN NIMI BANNERISSA */
+
+.logo {
+   font-family: 'DM Serif Display', serif;
+
+  font-size: 2rem;
+  letter-spacing: 1px;
+
+  color: #fff3f7;
+
+  white-space: nowrap;
+}
+  
+
+
+/* NAVIN LINKIT */
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.nav-links a {
   text-decoration: none;
 
-  background-color: rgba(255,255,255,0.6);
+  background-color: rgba(255, 255, 255, 0.18);
 
-  padding: 12px 22px;
+  padding: 10px 18px;
 
   border-radius: 999px;
 
-  color: #7d5d67;
+  color: #fff3f7;
 
   font-weight: 600;
+  font-size: 0.95rem;
 
   backdrop-filter: blur(4px);
 
   transition: 0.3s;
 }
 
-.navbar a:hover {
-  background-color: rgba(255,255,255,0.9);
+.nav-links a:hover {
+  background-color: rgba(255, 255, 255, 0.34);
 
   transform: translateY(-2px);
 }
@@ -79,16 +124,11 @@ body {
   padding-bottom: 50px;
 }
 
+/* Hero-otsikko on nyt siirretty jo banneriin, joten tätä ei enää tarvita.
+   Jätetään varmuuden vuoksi pois käytöstä. */
+
 .hero h1 {
-  font-family: 'Playfair Display', serif;
-
-  font-size: 4rem;
-
-  color: #7d5d67;
-
-  margin-bottom: 15px;
-
-  letter-spacing: 1px;
+  display: none;
 }
 
 .subtitle {
@@ -119,13 +159,16 @@ body {
 
 /* TEKSTILAATIKKO */
 
-.text-box { 
+.text-box {
+  position: relative;
+
   flex: 1;
   min-width: 300px;
+  max-width: 850px;
 
   background-color: rgba(250, 240, 230, 0.65);
 
-  padding: 35px;
+  padding: 45px;
 
   border-radius: 25px;
 
@@ -155,22 +198,27 @@ body {
 }
 
 
-/* KUVALAATIKKO */
+/* PYÖREÄ PROFIILIKUVA */
 
-.image-box {
-  width: 320px;
-  height: 500px;
+.profile-image {
+  position: absolute;
 
-  border-radius: 30px;
+  top: -35px;
+  right: 35px;
+
+  width: 110px;
+  height: 110px;
+
+  border-radius: 50%;
 
   overflow: hidden;
 
-  box-shadow: 0 5px 20px rgba(0,0,0,0.12);
+  border: 4px solid rgba(255,255,255,0.85);
 
-  align-self: stretch;
+  box-shadow: 0 5px 18px rgba(0,0,0,0.15);
 }
 
-.image-box img {
+.profile-image img {
   width: 100%;
   height: 100%;
 
@@ -217,8 +265,37 @@ body {
 
 @media (max-width: 768px) {
 
-  .hero h1 {
-    font-size: 2.7rem;
+  body {
+    padding-top: 150px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 16px 20px;
+  }
+
+  .logo {
+    font-size: 1.45rem;
+    text-align: center;
+  }
+
+  .nav-links {
+    gap: 10px;
+  }
+
+  .nav-links a {
+    padding: 8px 14px;
+    font-size: 0.9rem;
+  }
+
+  .hero {
+    padding-top: 35px;
+  }
+
+  .subtitle {
+    font-size: 1.05rem;
   }
 
   .content-container {
