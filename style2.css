@@ -12,17 +12,23 @@
 body {
   font-family: 'Quicksand', sans-serif;
 
-  /* TAUSTAKUVA */
   background-image: url("tausta2.png");
 
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  padding-top: 180px;
 
   min-height: 100vh;
 
-  color: #5e4b4b;
+  color: #361b23b9;
+}
+
+
+/* YHTENÄISET SÄVYT */
+
+:root {
+  --soft-pink: rgba(247, 211, 222, 0.42);
+  --text-color: #361b23b9;
 }
 
 
@@ -31,9 +37,9 @@ body {
 .overlay {
   background-color: rgba(255, 255, 255, 0.45);
 
-  min-height: 100vh;
+min-height: 100vh;
 
-  padding: 40px 20px;
+  padding: 135px 20px 40px 20px;
 }
 
 
@@ -57,7 +63,7 @@ body {
 
   padding: 18px 20px;
 
-  background-color: rgba(214, 90, 138, 0.35);
+  background-color: var(--soft-pink);
 
   backdrop-filter: blur(12px);
 
@@ -76,7 +82,7 @@ body {
 
   font-size: 3.2rem;
 
-  color: #f7d3de;
+  color: var(--text-color);
 
   font-weight: 600;
 
@@ -101,13 +107,13 @@ body {
 .nav-links a {
   text-decoration: none;
 
-  background-color: rgba(255,255,255,0.5);
+  background-color: rgba(255,255,255,0.35);
 
   padding: 10px 18px;
 
   border-radius: 999px;
 
-  color: #7d5d67;
+  color: var(--text-color);
 
   font-weight: 600;
 
@@ -117,13 +123,13 @@ body {
 }
 
 .nav-links a:hover {
-  background-color: rgba(255,255,255,0.85);
+  background-color: rgba(255,255,255,0.6);
 
   transform: translateY(-2px);
 }
 
 
-/* HERO ELI ALKUOSIO */
+/* HERO */
 
 .hero {
   text-align: center;
@@ -138,8 +144,8 @@ body {
 
 .subtitle {
   font-size: 3.2rem;
- 
-  color: #f7d3de;
+
+  color: var(--text-color);
 }
 
 
@@ -150,13 +156,16 @@ body {
 
   margin: auto;
 
+  margin-top: 40px;
+
   display: flex;
+
   gap: 40px;
 
   align-items: stretch;
   justify-content: center;
 
-  padding: 40px 0;
+  padding: 50px 0;
 
   flex-wrap: wrap;
 }
@@ -165,13 +174,17 @@ body {
 /* TEKSTILAATIKKO */
 
 .text-box {
+  position: relative;
+
+  margin-top: 40px;
+
   flex: 1;
 
   min-width: 300px;
 
-  background-color: rgba(226, 235, 242, 0.42);
+  background-color: var(--soft-pink);
 
-  padding: 35px;
+  padding: 100px 35px 35px 35px;
 
   border-radius: 25px;
 
@@ -189,39 +202,47 @@ body {
 
   font-family: 'Dancing Script', cursive;
 
-  color: #7d5d67;
+  color: var(--text-color);
 
   font-size: 3rem;
 
   font-weight: 500;
+
+  text-align: center;
 }
 
 .text-box p {
   margin-bottom: 18px;
 
   line-height: 1.8;
+
+  color: var(--text-color);
 }
 
 
-/* KUVALAATIKKO */
+/* PYÖREÄ PROFIILIKUVA */
 
-.image-box {
-  width: 320px;
+.profile-image {
+  position: absolute;
 
-  height: 500px;
+  top: -115px;
 
-  border-radius: 30px;
+  right: 25px;
+
+  width: 210px;
+  height: 210px;
+
+  border-radius: 50%;
 
   overflow: hidden;
 
-  box-shadow: 0 5px 20px rgba(0,0,0,0.12);
+  border: 6px solid rgba(255,255,255,0.85);
 
-  align-self: stretch;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.18);
 }
 
-.image-box img {
+.profile-image img {
   width: 100%;
-
   height: 100%;
 
   object-fit: cover;
@@ -237,7 +258,7 @@ body {
 
   text-align: center;
 
-  background-color: rgba(226, 235, 242, 0.42);
+  background-color: var(--soft-pink);
 
   padding: 30px;
 
@@ -253,7 +274,7 @@ body {
 
   font-family: 'Dancing Script', cursive;
 
-  color: #7d5d67;
+  color: var(--text-color);
 
   font-size: 3rem;
 
@@ -264,6 +285,8 @@ body {
   margin-bottom: 10px;
 
   font-size: 1.05rem;
+
+  color: var(--text-color);
 }
 
 
@@ -273,18 +296,23 @@ body {
 
   body {
     padding-top: 155px;
+
     background-attachment: scroll;
+
     overflow-x: hidden;
   }
 
   .navbar {
     padding: 14px 14px;
+
     gap: 10px;
   }
 
   .logo {
     font-size: 2.25rem;
+
     line-height: 1;
+
     white-space: normal;
   }
 
@@ -294,6 +322,7 @@ body {
 
   .nav-links a {
     padding: 7px 12px;
+
     font-size: 0.82rem;
   }
 
@@ -303,11 +332,13 @@ body {
 
   .hero {
     padding-top: 35px;
+
     padding-bottom: 35px;
   }
 
   .subtitle {
     font-size: 2.1rem;
+
     line-height: 1.1;
   }
 
@@ -318,25 +349,34 @@ body {
 
   .content-container {
     flex-direction: column;
+
     align-items: center;
+
     padding: 30px 0;
   }
 
   .text-box {
     width: 100%;
+
     min-width: 0;
-    padding: 25px;
+
+    padding: 130px 24px 28px 24px;
   }
 
-  .image-box {
-    width: 100%;
-    max-width: 350px;
-    height: 450px;
-    align-self: center;
+  .profile-image {
+    top: -60px;
+
+    right: 50%;
+
+    transform: translateX(50%);
+
+    width: 165px;
+    height: 165px;
   }
 
   .contact-box {
     width: 100%;
+
     padding: 25px;
   }
 
