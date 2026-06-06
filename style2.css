@@ -18,6 +18,7 @@ body {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  padding-top: 180px;
 
   min-height: 100vh;
 
@@ -39,19 +40,70 @@ body {
 /* NAVBAR */
 
 .navbar {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
+  position: fixed;
 
-  margin-bottom: 30px;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  gap: 12px;
+
+  padding: 18px 20px;
+
+  background-color: rgba(214, 90, 138, 0.35);
+
+  backdrop-filter: blur(12px);
+
+  z-index: 999;
+
+  box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+
+  border-bottom: 1px solid rgba(255,255,255,0.45);
 }
 
-.navbar a {
+
+/* OTSIKKO BANNERISSA */
+
+.logo {
+  font-family: 'Dancing Script', cursive;
+
+  font-size: 3.2rem;
+
+  color: #f7d3de;
+
+  font-weight: 600;
+
+  text-align: center;
+
+  line-height: 1;
+}
+
+
+/* LINKIT */
+
+.nav-links {
+  display: flex;
+
+  justify-content: center;
+
+  gap: 15px;
+
+  flex-wrap: wrap;
+}
+
+.nav-links a {
   text-decoration: none;
 
-  background-color: rgba(255,255,255,0.6);
+  background-color: rgba(255,255,255,0.5);
 
-  padding: 12px 22px;
+  padding: 10px 18px;
 
   border-radius: 999px;
 
@@ -64,8 +116,8 @@ body {
   transition: 0.3s;
 }
 
-.navbar a:hover {
-  background-color: rgba(255,255,255,0.9);
+.nav-links a:hover {
+  background-color: rgba(255,255,255,0.85);
 
   transform: translateY(-2px);
 }
@@ -81,23 +133,13 @@ body {
 }
 
 .hero h1 {
-  /* KAUNO FONTTI */
-
-  font-family: 'Dancing Script', cursive;
-
-  font-size: 5rem;
-
-  color: #7d5d67;
-
-  margin-bottom: 15px;
-
-  font-weight: 600;
+  display: none;
 }
 
 .subtitle {
-  font-size: 1.2rem;
-
-  color: #6f6b7c;
+  font-size: 3.2rem;
+ 
+  color: #f7d3de;
 }
 
 
@@ -229,8 +271,44 @@ body {
 
 @media (max-width: 768px) {
 
-  .hero h1 {
-    font-size: 3.2rem;
+  body {
+    padding-top: 155px;
+    background-attachment: scroll;
+    overflow-x: hidden;
+  }
+
+  .navbar {
+    padding: 14px 14px;
+    gap: 10px;
+  }
+
+  .logo {
+    font-size: 2.25rem;
+    line-height: 1;
+    white-space: normal;
+  }
+
+  .nav-links {
+    gap: 8px;
+  }
+
+  .nav-links a {
+    padding: 7px 12px;
+    font-size: 0.82rem;
+  }
+
+  .overlay {
+    padding: 30px 14px;
+  }
+
+  .hero {
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+
+  .subtitle {
+    font-size: 2.1rem;
+    line-height: 1.1;
   }
 
   .text-box h2,
@@ -241,25 +319,25 @@ body {
   .content-container {
     flex-direction: column;
     align-items: center;
+    padding: 30px 0;
+  }
+
+  .text-box {
+    width: 100%;
+    min-width: 0;
+    padding: 25px;
   }
 
   .image-box {
     width: 100%;
-
     max-width: 350px;
-
     height: 450px;
-
     align-self: center;
   }
 
-  .text-box,
   .contact-box {
+    width: 100%;
     padding: 25px;
-  }
-
-  .navbar {
-    flex-wrap: wrap;
   }
 
 }
