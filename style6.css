@@ -162,6 +162,9 @@ body {
   border: 1px solid rgba(255,255,255,0.35);
 }
 
+
+/* EYEBROW */
+
 .eyebrow {
   margin-bottom: 12px;
 
@@ -176,6 +179,9 @@ body {
   opacity: 0.82;
 }
 
+
+/* OTSIKKO */
+
 .text-box h1 {
   margin-bottom: 24px;
 
@@ -188,6 +194,9 @@ body {
 
   font-weight: 700;
 }
+
+
+/* TEKSTIT */
 
 .text-box p {
   margin-bottom: 18px;
@@ -268,70 +277,43 @@ body {
   color: var(--text-color);
 }
 
-
-  /* OMAVALVONTASUUNNITELMA */
-
-.download-box {
-  max-width: 700px;
-
-  margin: 35px auto 0 auto;
-
-  text-align: center;
-
-  background-color: var(--soft-pink);
-
-  padding: 30px;
-
-  border-radius: 30px;
-
-  backdrop-filter: blur(6px);
-
-  box-shadow: 0 8px 28px rgba(0,0,0,0.09);
-
-  border: 1px solid rgba(255,255,255,0.35);
-}
-
-.download-box h2 {
-  margin-bottom: 16px;
-
-  font-family: 'Playfair Display', serif;
-
-  color: var(--deep-berry);
-
-  font-size: 2rem;
-}
-
-.download-box p {
-  margin-bottom: 20px;
-
-  line-height: 1.7;
-
-  color: var(--text-color);
-}
-
-.download-button {
-  display: inline-block;
-
-  padding: 12px 24px;
-
-  border-radius: 999px;
-
-  background-color: rgba(255,255,255,0.42);
-
+.contact-box a,
+.contact-box a:visited {
   color: var(--deep-berry);
 
   text-decoration: none;
 
-  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+
+/* PIENET LINKIT */
+
+.small-links {
+  margin-top: 22px;
+
+  text-align: center;
+}
+
+.small-links a,
+.small-links a:visited {
+  font-size: 0.95rem;
+
+  color: #3f2a31;
+
+  text-decoration: none;
+
+  border-bottom: 1px solid rgba(63, 42, 49, 0.35);
 
   transition: 0.3s;
 }
 
-.download-button:hover {
-  background-color: rgba(255,255,255,0.72);
+.small-links a:hover {
+  color: #1f1116;
 
-  transform: translateY(-2px);
+  border-bottom: 1px solid #1f1116;
 }
+
 
 /* MOBIILI */
 
@@ -485,48 +467,23 @@ body {
     word-break: break-word;
   }
 
-  .contact-box a {
-    color: var(--deep-berry);
-
-    text-decoration: none;
-
+  .contact-box a,
+  .contact-box a:visited {
     font-size: 1rem;
 
     word-break: break-word;
   }
 
 
-  /* DOWNLOAD BOX */
+  /* PIENET LINKIT */
 
-  .download-box {
-    width: 100%;
-
-    padding: 26px 20px;
-
-    border-radius: 26px;
+  .small-links {
+    margin-top: 20px;
   }
 
-  .download-box h2 {
-    font-size: 1.7rem;
-  }
-
-  .download-box p {
-    font-size: 1rem;
-
-    line-height: 1.7;
-  }
-
-
-  /* DOWNLOAD NAPPI */
-
-  .download-button {
-    width: 100%;
-
-    max-width: 320px;
-
-    text-align: center;
-
-    padding: 14px 20px;
+  .small-links a,
+  .small-links a:visited {
+    font-size: 0.9rem;
   }
 
 }
