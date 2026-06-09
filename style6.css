@@ -314,6 +314,55 @@ body {
   border-bottom: 1px solid #1f1116;
 }
 
+.price-box {
+max-width: 850px;
+
+margin: 35px auto 0 auto;
+
+background-color: var(--soft-pink);
+
+padding: 30px 36px;
+
+border-radius: 28px;
+
+backdrop-filter: blur(6px);
+
+box-shadow: 0 8px 28px rgba(0,0,0,0.08);
+
+border: 1px solid rgba(255,255,255,0.35);
+
+text-align: center;
+}
+
+.price-box h2 {
+margin-bottom: 18px;
+
+font-family: 'Playfair Display', serif;
+
+color: var(--deep-berry);
+
+font-size: 2rem;
+}
+
+.price-box p {
+margin-bottom: 12px;
+
+font-size: 1.08rem;
+
+color: var(--text-color);
+
+line-height: 1.7;
+}
+
+.large-profile {
+   width: 300px;
+  height: 300px;
+
+  top: -165px;
+
+  right: 45px;
+}
+
 
 /* MOBIILI */
 
@@ -485,5 +534,16 @@ body {
   .small-links a:visited {
     font-size: 0.9rem;
   }
+
+  .large-profile {
+  width: 210px;
+    height: 210px;
+
+    top: -90px;
+
+    right: 50%;
+
+    transform: translateX(50%);
+}
 
 }
