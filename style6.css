@@ -269,6 +269,70 @@ body {
 }
 
 
+  /* OMAVALVONTASUUNNITELMA */
+
+.download-box {
+  max-width: 700px;
+
+  margin: 35px auto 0 auto;
+
+  text-align: center;
+
+  background-color: var(--soft-pink);
+
+  padding: 30px;
+
+  border-radius: 30px;
+
+  backdrop-filter: blur(6px);
+
+  box-shadow: 0 8px 28px rgba(0,0,0,0.09);
+
+  border: 1px solid rgba(255,255,255,0.35);
+}
+
+.download-box h2 {
+  margin-bottom: 16px;
+
+  font-family: 'Playfair Display', serif;
+
+  color: var(--deep-berry);
+
+  font-size: 2rem;
+}
+
+.download-box p {
+  margin-bottom: 20px;
+
+  line-height: 1.7;
+
+  color: var(--text-color);
+}
+
+.download-button {
+  display: inline-block;
+
+  padding: 12px 24px;
+
+  border-radius: 999px;
+
+  background-color: rgba(255,255,255,0.42);
+
+  color: var(--deep-berry);
+
+  text-decoration: none;
+
+  font-weight: 600;
+
+  transition: 0.3s;
+}
+
+.download-button:hover {
+  background-color: rgba(255,255,255,0.72);
+
+  transform: translateY(-2px);
+}
+
 /* MOBIILI */
 
 @media (max-width: 768px) {
@@ -279,9 +343,15 @@ body {
     overflow-x: hidden;
   }
 
+
+  /* OVERLAY */
+
   .overlay {
     padding: 175px 14px 40px 14px;
   }
+
+
+  /* NAVBAR */
 
   .navbar {
     flex-direction: column;
@@ -291,7 +361,12 @@ body {
     gap: 10px;
 
     padding: 14px 16px;
+
+    backdrop-filter: blur(16px);
   }
+
+
+  /* LOGO */
 
   .logo {
     font-size: 1.9rem;
@@ -301,10 +376,17 @@ body {
     white-space: normal;
 
     line-height: 1.1;
+
+    max-width: 90%;
   }
+
+
+  /* NAVILINKIT */
 
   .nav-links {
     gap: 8px;
+
+    justify-content: center;
   }
 
   .nav-links a {
@@ -313,19 +395,34 @@ body {
     font-size: 0.82rem;
   }
 
+
+  /* SISÄLTÖ */
+
   .content-container {
-    margin-top: 55px;
+    margin-top: 75px;
 
     padding: 30px 0;
+
+    flex-direction: column;
+
+    align-items: center;
   }
+
+
+  /* TEKSTILAATIKKO */
 
   .text-box {
     width: 100%;
+
+    min-width: 0;
 
     padding: 130px 24px 32px 24px;
 
     border-radius: 26px;
   }
+
+
+  /* PYÖREÄ PROFIILIKUVA */
 
   .profile-image {
     top: -62px;
@@ -338,26 +435,44 @@ body {
     height: 165px;
   }
 
+
+  /* EYEBROW */
+
   .eyebrow {
     text-align: center;
 
     font-size: 0.8rem;
   }
 
+
+  /* OTSIKKO */
+
   .text-box h1 {
     font-size: 1.85rem;
 
     text-align: center;
+
+    word-break: break-word;
   }
+
+
+  /* TEKSTIT */
 
   .text-box p {
     font-size: 1.02rem;
+
+    word-break: break-word;
   }
+
+
+  /* YHTEYSTIEDOT */
 
   .contact-box {
     width: 100%;
 
     padding: 28px 22px;
+
+    border-radius: 26px;
   }
 
   .contact-box h2 {
@@ -366,6 +481,52 @@ body {
 
   .contact-box p {
     font-size: 1.05rem;
+
+    word-break: break-word;
+  }
+
+  .contact-box a {
+    color: var(--deep-berry);
+
+    text-decoration: none;
+
+    font-size: 1rem;
+
+    word-break: break-word;
+  }
+
+
+  /* DOWNLOAD BOX */
+
+  .download-box {
+    width: 100%;
+
+    padding: 26px 20px;
+
+    border-radius: 26px;
+  }
+
+  .download-box h2 {
+    font-size: 1.7rem;
+  }
+
+  .download-box p {
+    font-size: 1rem;
+
+    line-height: 1.7;
+  }
+
+
+  /* DOWNLOAD NAPPI */
+
+  .download-button {
+    width: 100%;
+
+    max-width: 320px;
+
+    text-align: center;
+
+    padding: 14px 20px;
   }
 
 }
