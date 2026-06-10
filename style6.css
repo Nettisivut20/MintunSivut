@@ -258,6 +258,24 @@ body {
 
   border: 1px solid rgba(255,255,255,0.35);
 }
+.contact-button { display: inline-block; 
+  margin-top: 20px; 
+  padding: 14px 28px; 
+  background: rgba(185, 124, 140, 0.92); 
+  color: white; text-decoration: none; 
+  font-weight: 600; 
+  font-size: 1rem; 
+  letter-spacing: 0.4px; 
+  border-radius: 40px; 
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12); 
+  transition: transform 0.25s ease, background 0.25s ease, box-shadow 0.25s ease; 
+}
+
+.contact-button:hover {
+   background: rgba(166, 102, 120, 0.95); 
+  transform: translateY(-2px); 
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.16); 
+}
 
 .contact-box h2 {
   margin-bottom: 20px;
@@ -523,6 +541,16 @@ line-height: 1.7;
     word-break: break-word;
   }
 
+  .contact-button {
+  width: 100%;
+  max-width: 260px;
+
+  padding: 13px 20px;
+
+  font-size: 0.98rem;
+
+  text-align: center;
+}
 
   /* PIENET LINKIT */
 
