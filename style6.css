@@ -500,15 +500,7 @@ line-height: 1.7;
   text-justify: auto;
 }
 
-  /* OTSIKKO */
 
-  .text-box h1 {
-    font-size: 1.85rem;
-
-    text-align: center;
-
-     text-wrap: balance;
-  }
 
   /* TEKSTIT */
 
@@ -588,5 +580,17 @@ line-height: 1.7;
 
     transform: translateX(50%);
 }
+
+/* OTSIKKO */
+.text-box h1 {
+  font-size: 1.55rem;
+  line-height: 1.22;
+  text-align: center;
+  text-wrap: balance;
+  max-width: 22ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 
 }
