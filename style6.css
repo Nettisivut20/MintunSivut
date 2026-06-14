@@ -461,22 +461,22 @@ line-height: 1.7;
 
 
 
-  /* TEKSTIT */
+/* TEKSTIT */
 
-  .text-box p {
-    font-size: 1.02rem;
+.text-box p {
+  font-size: 0.97rem;
 
-    line-height: 1.8;
+  line-height: 1.65;
 
-    text-align: left;
+  text-align: left;
 
-    hyphens: auto;
+  color: rgba(95, 71, 79, 0.92);
 
-    overflow-wrap: break-word;
+  max-width: 34ch;
 
-    word-break: normal;
-  }
-
+  margin-left: auto;
+  margin-right: auto;
+}
 
   /* PYÖREÄ PROFIILIKUVA */
 
@@ -493,11 +493,16 @@ line-height: 1.7;
 
 
   /* EYEBROW */
-
 .eyebrow {
   text-align: center;
 
-  text-justify: auto;
+  font-size: 0.7rem;
+
+  letter-spacing: 0.8px;
+
+  opacity: 0.78;
+
+  line-height: 1.4;
 }
 
 
