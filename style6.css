@@ -489,12 +489,11 @@ line-height: 1.7;
 
   /* EYEBROW */
 
-  .eyebrow {
-    text-align: center;
+.eyebrow {
+  text-align: center;
 
-    font-size: 0.8rem;
-  }
-
+  text-justify: auto;
+}
 
   /* OTSIKKO */
 
