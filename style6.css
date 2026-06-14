@@ -390,7 +390,6 @@ line-height: 1.7;
 
   body {
     background-attachment: scroll;
-
     overflow-x: hidden;
   }
 
@@ -406,13 +405,9 @@ line-height: 1.7;
 
   .navbar {
     flex-direction: column;
-
     justify-content: center;
-
     gap: 10px;
-
     padding: 14px 16px;
-
     backdrop-filter: blur(16px);
   }
 
@@ -421,13 +416,9 @@ line-height: 1.7;
 
   .logo {
     font-size: 1.9rem;
-
     text-align: center;
-
     white-space: normal;
-
     line-height: 1.1;
-
     max-width: 90%;
   }
 
@@ -436,13 +427,11 @@ line-height: 1.7;
 
   .nav-links {
     gap: 8px;
-
     justify-content: center;
   }
 
   .nav-links a {
     padding: 7px 12px;
-
     font-size: 0.82rem;
   }
 
@@ -451,77 +440,77 @@ line-height: 1.7;
 
   .content-container {
     margin-top: 75px;
-
     padding: 30px 0;
-
     flex-direction: column;
-
     align-items: center;
   }
 
 
+  /* TEKSTILAATIKKO */
 
-/* TEKSTIT */
+  .text-box {
+    width: 100%;
+    min-width: 0;
+    padding: 130px 24px 32px 24px;
+    border-radius: 26px;
+  }
 
-.text-box p {
-  font-size: 0.97rem;
-
-  line-height: 1.65;
-
-  text-align: left;
-
-  color: rgba(95, 71, 79, 0.92);
-
-  max-width: 34ch;
-
-  margin-left: auto;
-  margin-right: auto;
-}
 
   /* PYÖREÄ PROFIILIKUVA */
 
   .profile-image {
     top: -62px;
-
     right: 50%;
-
     transform: translateX(50%);
-
     width: 165px;
     height: 165px;
   }
 
+  .large-profile {
+    width: 210px;
+    height: 210px;
+    top: -90px;
+    right: 50%;
+    transform: translateX(50%);
+  }
+
 
   /* EYEBROW */
-.eyebrow {
-  text-align: center;
 
-  font-size: 0.7rem;
+  .eyebrow {
+    text-align: center;
+    font-size: 0.7rem;
+    letter-spacing: 0.8px;
+    line-height: 1.4;
+    opacity: 0.78;
+  }
 
-  letter-spacing: 0.8px;
 
-  opacity: 0.78;
+  /* OTSIKKO */
 
-  line-height: 1.4;
-}
-
+  .text-box h1 {
+    font-size: 1.45rem;
+    line-height: 1.22;
+    text-align: center;
+    text-wrap: balance;
+    max-width: 22ch;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
 
 
   /* TEKSTIT */
 
   .text-box p {
-    font-size: 1.02rem;
-
-    line-height: 1.75;
-
-    text-align: justify;
-
-    text-justify: inter-word;
-
-    hyphens: auto;
-
-    overflow-wrap: break-word;
-
+    font-size: 0.97rem;
+    line-height: 1.7;
+    text-align: left;
+    color: rgba(95, 71, 79, 0.92);
+    max-width: 35ch;
+    margin: 0 auto 16px auto;
+    hyphens: none;
+    overflow-wrap: normal;
     word-break: normal;
   }
 
@@ -530,9 +519,7 @@ line-height: 1.7;
 
   .contact-box {
     width: 100%;
-
     padding: 28px 22px;
-
     border-radius: 26px;
   }
 
@@ -541,28 +528,28 @@ line-height: 1.7;
   }
 
   .contact-box p {
-    font-size: 1.05rem;
-
-    word-break: break-word;
+    font-size: 1.02rem;
+    line-height: 1.6;
+    text-align: center;
   }
 
   .contact-box a,
   .contact-box a:visited {
     font-size: 1rem;
-
     word-break: break-word;
   }
 
+
+  /* BUTTON */
+
   .contact-button {
-  width: 100%;
-  max-width: 260px;
+    width: 100%;
+    max-width: 260px;
+    padding: 13px 20px;
+    font-size: 0.98rem;
+    text-align: center;
+  }
 
-  padding: 13px 20px;
-
-  font-size: 0.98rem;
-
-  text-align: center;
-}
 
   /* PIENET LINKIT */
 
@@ -574,28 +561,6 @@ line-height: 1.7;
   .small-links a:visited {
     font-size: 0.9rem;
   }
-
-  .large-profile {
-  width: 210px;
-    height: 210px;
-
-    top: -90px;
-
-    right: 50%;
-
-    transform: translateX(50%);
-}
-
-/* OTSIKKO */
-.text-box h1 {
-  font-size: 1.25rem;
-  line-height: 1.22;
-  text-align: center;
-  text-wrap: balance;
-  max-width: 22ch;
-  margin-left: auto;
-  margin-right: auto;
-}
 
 
 }
