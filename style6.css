@@ -460,16 +460,21 @@ line-height: 1.7;
   }
 
 
-  /* TEKSTILAATIKKO */
 
-  .text-box {
-    width: 100%;
+  /* TEKSTIT */
 
-    min-width: 0;
+  .text-box p {
+    font-size: 1.02rem;
 
-    padding: 130px 24px 32px 24px;
+    line-height: 1.8;
 
-    border-radius: 26px;
+    text-align: left;
+
+    hyphens: auto;
+
+    overflow-wrap: break-word;
+
+    word-break: normal;
   }
 
 
