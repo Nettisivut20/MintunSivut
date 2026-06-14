@@ -502,7 +502,7 @@ line-height: 1.7;
 
     text-align: center;
 
-    word-break: break-word;
+     text-wrap: balance;
   }
 
   /* TEKSTIT */
