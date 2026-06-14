@@ -206,6 +206,8 @@ body {
   line-height: 1.85;
 
   color: var(--text-color);
+
+  text-align: justify;
 }
 
 
@@ -511,6 +513,7 @@ line-height: 1.7;
     font-size: 1.02rem;
 
     word-break: break-word;
+     text-align: left;
   }
 
 
