@@ -1,0 +1,598 @@
+/* RESET */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* YHTENÄISET SÄVYT */
+
+:root {
+  --soft-pink: rgba(248, 200, 222, 0.62);
+  --soft-light: rgba(255, 248, 250, 0.56);
+  --text-color: #5f474f;
+  --deep-berry: #4c303a;
+}
+
+
+/* BODY */
+
+body {
+  font-family: 'Quicksand', sans-serif;
+
+  background-image: url("beigeTausta.png");
+  background-size: 115%;
+
+  background-position: center;
+  background-attachment: fixed;
+
+  min-height: 100vh;
+
+  color: var(--text-color);
+}
+
+
+/* OVERLAY */
+
+.overlay {
+  min-height: 100vh;
+  background-color: rgba(255, 255, 255, 0.68);
+
+
+  padding: 170px 20px 60px 20px;
+}
+
+
+/* NAVBAR */
+
+.navbar {
+  position: fixed;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 25px;
+
+  padding: 18px 42px;
+
+  background-color: rgba(248, 200, 222, 0.78);
+
+  backdrop-filter: blur(10px);
+
+  z-index: 999;
+
+  box-shadow: 0 4px 18px rgba(0,0,0,0.10);
+
+  border-bottom: 1px solid rgba(255,255,255,0.45);
+}
+
+
+/* LOGO */
+
+.logo {
+  font-family: 'DM Serif Display', serif;
+
+  font-size: 2.7rem;
+
+  letter-spacing: 1px;
+
+  color: var(--deep-berry);
+
+  white-space: nowrap;
+}
+
+
+/* NAV LINKIT */
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 12px;
+
+  flex-wrap: wrap;
+}
+
+.nav-links a {
+  text-decoration: none;
+
+  background-color: rgba(255,255,255,0.45);
+
+  padding: 9px 17px;
+
+  border-radius: 999px;
+
+  color: var(--deep-berry);
+
+  font-weight: 600;
+  font-size: 0.92rem;
+
+  backdrop-filter: blur(4px);
+
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  background-color: rgba(255,255,255,0.70);
+
+  transform: translateY(-2px);
+}
+
+
+/* SISÄLTÖ */
+
+.content-container {
+  max-width: 1200px;
+
+  margin: 65px auto 0 auto;
+
+  display: flex;
+  justify-content: center;
+
+  padding: 40px 0;
+}
+
+
+/* TEKSTILAATIKKO */
+
+.text-box {
+  position: relative;
+
+  width: 100%;
+
+  max-width: 1050px;
+  background-color: rgba(248, 200, 222, 0.78);
+  padding: 135px 80px 60px 80px;
+
+
+  border-radius: 34px;
+
+  backdrop-filter: blur(9px);
+
+  box-shadow: 0 14px 38px rgba(0,0,0,0.12);
+
+  border: 1px solid rgba(255,255,255,0.46);
+}
+
+
+/* EYEBROW */
+
+.eyebrow {
+  margin-bottom: 12px;
+
+  font-size: 0.95rem;
+  font-weight: 600;
+
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+
+  color: var(--deep-berry);
+
+  opacity: 0.82;
+}
+
+
+/* OTSIKKO */
+
+.text-box h1 {
+  margin-bottom: 24px;
+
+  font-family: 'Playfair Display', serif;
+
+  color: var(--deep-berry);
+
+  font-size: 2.55rem;
+  line-height: 1.18;
+
+  font-weight: 700;
+}
+
+
+/* TEKSTIT */
+
+.text-box p {
+  margin-bottom: 18px;
+
+  font-size: 1.16rem;
+
+  line-height: 1.85;
+
+  color: var(--text-color);
+
+  text-align: justify;
+}
+
+
+/* PYÖREÄ PROFIILIKUVA */
+
+.profile-image {
+  position: absolute;
+
+  top: -115px;
+  right: 42px;
+
+  width: 225px;
+  height: 225px;
+
+  border-radius: 50%;
+
+  overflow: hidden;
+
+  border: 7px solid rgba(255,255,255,0.9);
+
+  box-shadow: 0 10px 28px rgba(0,0,0,0.18);
+}
+
+.profile-image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+
+/* YHTEYSTIEDOT */
+
+.contact-box {
+
+  margin: 60px auto 0 auto;
+
+  text-align: center;
+
+  max-width: 850px;
+  background-color: rgba(248, 200, 222, 0.78);
+
+
+  padding: 38px 36px;
+
+  border-radius: 32px;
+
+  backdrop-filter: blur(9px);
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.10);
+
+  border: 1px solid rgba(255,255,255,0.46);
+}
+
+.contact-button {
+  display: inline-block;
+
+  margin-top: 20px;
+
+  padding: 14px 28px;
+
+  background: rgba(185, 124, 140, 0.92);
+
+  color: white;
+
+  text-decoration: none;
+
+  font-weight: 600;
+  font-size: 1rem;
+
+  letter-spacing: 0.4px;
+
+  border-radius: 40px;
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+
+  transition: transform 0.25s ease, background 0.25s ease, box-shadow 0.25s ease;
+}
+
+.contact-button:hover {
+  background: rgba(166, 102, 120, 0.95);
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.16);
+}
+
+.contact-box h2 {
+  margin-bottom: 20px;
+
+  font-family: 'Playfair Display', serif;
+
+  color: var(--deep-berry);
+
+  font-size: 2.15rem;
+}
+
+.contact-box p {
+  margin-bottom: 10px;
+
+  font-size: 1.2rem;
+
+  color: var(--text-color);
+}
+
+.contact-box a,
+.contact-box a:visited {
+  color: var(--deep-berry);
+
+  text-decoration: none;
+
+  font-size: 1.1rem;
+}
+
+
+/* PIENET LINKIT */
+
+.small-links {
+  margin-top: 22px;
+
+  text-align: center;
+}
+
+.small-links a,
+.small-links a:visited {
+  font-size: 0.95rem;
+
+  color: #3f2a31;
+
+  text-decoration: none;
+
+  border-bottom: 1px solid rgba(63, 42, 49, 0.35);
+
+  transition: 0.3s;
+}
+
+.small-links a:hover {
+  color: #1f1116;
+
+  border-bottom: 1px solid #1f1116;
+}
+
+
+/* HINNASTO */
+
+.price-box {
+
+  margin: 38px auto 0 auto;
+
+  max-width: 1050px;
+  background-color: rgba(248, 200, 222, 0.78);
+
+
+  padding: 34px 42px;
+
+  border-radius: 30px;
+
+  backdrop-filter: blur(9px);
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.10);
+
+  border: 1px solid rgba(255,255,255,0.46);
+
+  text-align: center;
+}
+
+.price-box h2 {
+  margin-bottom: 18px;
+
+  font-family: 'Playfair Display', serif;
+
+  color: var(--deep-berry);
+
+  font-size: 2rem;
+}
+
+.price-box p {
+  margin-bottom: 12px;
+
+  font-size: 1.08rem;
+
+  color: var(--text-color);
+
+  line-height: 1.7;
+}
+
+.large-profile {
+  width: 300px;
+  height: 300px;
+
+  top: -165px;
+
+  right: 45px;
+}
+
+
+/* MOBIILI */
+
+@media (max-width: 768px) {
+
+  :root {
+    --soft-pink: rgba(248, 200, 222, 0.52);
+    --soft-light: rgba(255, 248, 250, 0.48);
+  }
+
+  body {
+    background-attachment: scroll;
+    overflow-x: hidden;
+  }
+
+
+  /* OVERLAY */
+
+  .overlay {
+    background-color: rgba(255, 255, 255, 0.42);
+    padding: 175px 14px 40px 14px;
+  }
+
+
+  /* NAVBAR */
+
+  .navbar {
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    padding: 14px 16px;
+    backdrop-filter: blur(16px);
+  }
+
+
+  /* LOGO */
+
+  .logo {
+    font-size: 1.9rem;
+    text-align: center;
+    white-space: normal;
+    line-height: 1.1;
+    max-width: 90%;
+  }
+
+
+  /* NAVILINKIT */
+
+  .nav-links {
+    gap: 8px;
+    justify-content: center;
+  }
+
+  .nav-links a {
+    padding: 7px 12px;
+    font-size: 0.82rem;
+  }
+
+
+  /* SISÄLTÖ */
+
+  .content-container {
+    margin-top: 75px;
+    padding: 30px 0;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  /* TEKSTILAATIKKO */
+
+  .text-box {
+    width: 100%;
+    min-width: 0;
+    max-width: 850px;
+    background-color: var(--soft-pink);
+    padding: 130px 24px 32px 24px;
+    border-radius: 26px;
+    backdrop-filter: blur(6px);
+  }
+
+
+  /* PYÖREÄ PROFIILIKUVA */
+
+  .profile-image {
+    top: -62px;
+    right: 50%;
+    transform: translateX(50%);
+    width: 165px;
+    height: 165px;
+  }
+
+  .large-profile {
+    width: 210px;
+    height: 210px;
+    top: -90px;
+    right: 50%;
+    transform: translateX(50%);
+  }
+
+
+  /* EYEBROW */
+
+  .eyebrow {
+    text-align: center;
+    font-size: 0.7rem;
+    letter-spacing: 0.8px;
+    line-height: 1.4;
+    opacity: 0.78;
+  }
+
+
+  /* OTSIKKO */
+
+  .text-box h1 {
+    font-size: 1.45rem;
+    line-height: 1.22;
+    text-align: center;
+    text-wrap: balance;
+    max-width: 22ch;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+
+
+  /* TEKSTIT */
+
+  .text-box p {
+    font-size: 0.97rem;
+    line-height: 1.7;
+    text-align: left;
+    color: rgba(95, 71, 79, 0.92);
+    max-width: 35ch;
+    margin: 0 auto 16px auto;
+    hyphens: none;
+    overflow-wrap: normal;
+    word-break: normal;
+  }
+
+
+  /* YHTEYSTIEDOT */
+
+  .contact-box {
+    width: 100%;
+    max-width: 700px;
+    background-color: var(--soft-pink);
+    padding: 28px 22px;
+    border-radius: 26px;
+    backdrop-filter: blur(6px);
+  }
+
+  .contact-box h2 {
+    font-size: 1.8rem;
+  }
+
+  .contact-box p {
+    font-size: 1.02rem;
+    line-height: 1.6;
+    text-align: center;
+  }
+
+  .contact-box a,
+  .contact-box a:visited {
+    font-size: 1rem;
+    word-break: break-word;
+  }
+
+
+  /* BUTTON */
+
+  .contact-button {
+    width: 100%;
+    max-width: 260px;
+    padding: 13px 20px;
+    font-size: 0.98rem;
+    text-align: center;
+  }
+
+
+  /* PIENET LINKIT */
+
+  .small-links {
+    margin-top: 20px;
+  }
+
+  .small-links a,
+  .small-links a:visited {
+    font-size: 0.9rem;
+  }
+
+}
