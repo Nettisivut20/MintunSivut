@@ -264,6 +264,7 @@ a:visited {
   display: inline-block;
 
   margin-top: 20px;
+
   padding: 14px 28px;
 
   background-color: rgba(255,255,255,0.62);
@@ -279,19 +280,19 @@ a:visited {
 
   border-radius: 40px;
 
+  backdrop-filter: blur(4px);
+
   box-shadow: 0 8px 20px rgba(90,110,140,0.12);
 
-  transition: transform 0.25s ease, background 0.25s ease, box-shadow 0.25s ease;
+  transition: 0.3s;
 }
 
 .contact-button:hover {
-  background: rgba(255,255,255,0.92);
+  background-color: rgba(255,255,255,0.92);
 
   color: var(--deep-berry);
 
   transform: translateY(-2px);
-
-  box-shadow: 0 12px 24px rgba(90,110,140,0.16);
 }
 
 .contact-box h2 {
@@ -427,6 +428,7 @@ a:visited {
   border-bottom: 1px solid var(--deep-berry);
 }
 
+
 /* MOBIILI */
 
 @media (max-width: 768px) {
@@ -443,33 +445,47 @@ a:visited {
   .navbar {
     flex-direction: column;
     justify-content: center;
+
     gap: 10px;
+
     padding: 14px 16px;
+
     backdrop-filter: blur(16px);
+
+    border-radius: 0 0 18px 18px;
   }
 
   .logo {
     font-size: 1.9rem;
+
     text-align: center;
+
     white-space: normal;
+
     line-height: 1.1;
+
     max-width: 90%;
   }
 
   .nav-links {
     gap: 8px;
+
     justify-content: center;
   }
 
   .nav-links a {
     padding: 7px 12px;
+
     font-size: 0.82rem;
   }
 
   .content-container {
     margin-top: 75px;
+
     padding: 30px 0;
+
     flex-direction: column;
+
     align-items: center;
   }
 
@@ -477,7 +493,7 @@ a:visited {
     width: 100%;
     min-width: 0;
 
-    padding: 130px 24px 32px 24px;
+    padding: 130px 28px 40px 28px;
 
     border-radius: 26px;
   }
@@ -488,18 +504,21 @@ a:visited {
 
   .profile-image {
     top: -62px;
+
     right: 50%;
+
     transform: translateX(50%);
 
-    width: 165px;
-    height: 165px;
+    width: 178px;
+    height: 178px;
   }
 
   .large-profile {
-    width: 210px;
-    height: 210px;
+    width: 220px;
+    height: 220px;
 
-    top: -90px;
+    top: -95px;
+
     right: 50%;
 
     transform: translateX(50%);
@@ -535,23 +554,23 @@ a:visited {
   }
 
   .text-box p {
-    font-size: 0.97rem;
+    font-size: 0.99rem;
 
-    line-height: 1.7;
+    line-height: 1.75;
 
     text-align: left;
 
     color: var(--text-color);
 
-    max-width: 35ch;
+    max-width: 38ch;
 
-    margin: 0 auto 16px auto;
+    margin: 0 auto 18px auto;
   }
 
   .contact-box {
     width: 100%;
 
-    padding: 28px 22px;
+    padding: 30px 24px;
 
     border-radius: 26px;
   }
@@ -563,7 +582,7 @@ a:visited {
   .contact-box p {
     font-size: 1.02rem;
 
-    line-height: 1.6;
+    line-height: 1.65;
 
     text-align: center;
   }
@@ -587,23 +606,18 @@ a:visited {
     text-align: center;
   }
 
-  .small-links {
+  .small-links,
+  .document-link {
     margin-top: 20px;
+
+    text-align: center;
   }
 
   .small-links a,
-  .small-links a:visited {
-    font-size: 0.9rem;
-  }
-
-  .document-link {
-    text-align: center;
-
-    margin-top: 24px;
-  }
-
+  .small-links a:visited,
   .document-link a,
   .document-link a:visited {
-    font-size: 0.75rem;
+    font-size: 0.78rem;
   }
+
 }
