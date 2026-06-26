@@ -17,6 +17,8 @@
 }
 
 
+
+
 /* BODY */
 
 body {
@@ -63,6 +65,21 @@ a:visited {
   color: var(--deep-berry);
 }
 
+.footer {
+  text-align: center;
+  padding: 30px 20px;
+  font-size: 0.9rem;
+  color: var(--text-color);
+}
+
+.footer a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
 
 /* OVERLAY */
 
